@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,60,253,1) 100%);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 1000px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+    margin: 100px auto;
+    top: 35px;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-shadow: 4px 4px 2px rgb(186, 182, 190);
+    color: rgb(36, 5, 94);
+}
+
+ul li {
+    list-style: none;
+    
+}
+
+ul li a img {
+    width: 200px;
+    float: left;
+    margin: 24px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(48, 41, 65);
+    transition: .3s;
+
+}
+
+ul li a img:hover {
+    transform: scale(.92);
+}
+
+.popup {
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transition: .3s;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.popup:target {
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+}
+
+.popup img {
+    max-height: 100%;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.popup:target img {
+    animation: zoomAndFade .5s;
+}
+
+.popup #close {
+    position: absolute;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    top: 20px;
+    right: 25%;
+    animation: zoomAndFade .5s;
+}
+
+.kanan {
+    position: absolute;
+    color: white;
+    font-size: 120px;
+    text-decoration: none;
+    right: 20%;
+    top: 250px;
+    animation: zoomAndFade .5s;
+}
+
+.kiri {
+    position: absolute;
+    color: white;
+    font-size: 120px;
+    text-decoration: none;
+    left: 20%;
+    top: 270px;
+    animation: zoomAndFade .5s;
+    transform: rotate(180deg);
+}
+
+@keyframes zoomAndFade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+

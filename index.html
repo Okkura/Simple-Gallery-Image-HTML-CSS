@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLENIM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GALLEVIEW</h1>
+
+        <!-- THUMBNAIL -->
+        <ul>
+            <li><a href="#overlay-1">
+                <img src="img/pict-1.jpg" alt="">
+            </a></li>
+
+            <li><a href="#overlay-2">
+                <img src="img/pict-2.jpg" alt="">
+            </a></li>
+
+            <li><a href="#overlay-3">
+                <img src="img/pict-3.jpg" alt="">
+            </a></li>
+
+            <li><a href="#overlay-4">
+                <img src="img/pict-4.jpg" alt="">
+            </a></li>
+        </ul>
+
+        <!-- IMAGE ZOOM -->
+        <div class="popup" id="overlay-1">
+            <a href="" id="close">&#10006</a>
+
+            <a href="#overlay-2" class="kanan">&#10132</a>
+            <img src="img/pict-1.jpg">
+            <a href="#overlay-4" class="kiri">&#10132</a>
+        </div>
+
+        <div class="popup" id="overlay-2">
+            <a href="" id="close">&#10006</a>
+
+            <a href="#overlay-3" class="kanan">&#10132</a>
+            <img src="img/pict-2.jpg">
+            <a href="#overlay-1" class="kiri">&#10132</a>
+        </div>
+
+        <div class="popup" id="overlay-3">
+            <a href="" id="close">&#10006</a>
+
+            <a href="#overlay-4" class="kanan">&#10132</a>
+            <img src="img/pict-3.jpg">
+            <a href="#overlay-2" class="kiri">&#10132</a>
+        </div>
+
+        <div class="popup" id="overlay-4">
+            <a href="" id="close">&#10006</a>
+
+            <a href="#overlay-1" class="kanan">&#10132</a>
+            <img src="img/pict-4.jpg">
+            <a href="#overlay-3" class="kiri">&#10132</a>
+        </div>
+    </div>
+</body>
+</html>
